@@ -9,11 +9,11 @@ body {
 }
 
 body.scheme-light {
-  @apply bg-gray-100 text-gray-900;
+  @apply bg-gray-100 text-black;
 }
 
 body.scheme-dark {
-  @apply bg-gray-900 text-gray-100;
+  @apply bg-gray-900 text-white;
 }
 
 main {

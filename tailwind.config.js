@@ -1,16 +1,23 @@
 const plugin = require("tailwindcss/plugin");
 const selectorParser = require("postcss-selector-parser");
-
+const { colors } = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      colors: {
+        gray: {
+          ...colors.gray,
+          900: "#1a1a1a",
+        },
+      },
+
       maxWidth: {
         prose: "65ch",
       },
 
       animation: {
-        'spin-slow': 'spin 1.5s linear infinite',
+        "spin-slow": "spin 1.5s linear infinite",
       },
 
       typography: (theme) => ({

@@ -1,3 +1,2 @@
-export default function HomePage() {
-    return <h1>Collected Notes</h1>
-}
+import { HomeLayout } from "layouts/home";
+export default HomeLayout;
