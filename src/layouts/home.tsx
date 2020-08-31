@@ -89,9 +89,12 @@ export function HomeLayout() {
               <p className="leading-relaxed">
                 The iPhone & iPad app enables a <strong>fast</strong>{" "}
                 native-first experience. Just open the app and dive into writing
-                mode.{" "}
+                mode.
+                <br />
                 <Link href="/[site]/[...note]" as="/blog/apps">
-                  <a className="underline">More about our apps.</a>
+                  <a className="px-4 py-2 font-medium mt-2 inline-block border border-white rounded-lg">
+                    More about our apps.
+                  </a>
                 </Link>
               </p>
             </article>
@@ -132,7 +135,9 @@ export function HomeLayout() {
                 for API access, image uploads, support and more.
                 <br />
                 <Link href="/[site]/[...note]" as="/blog/premium">
-                  <a className="underline">More about ⚡️ Premium</a>
+                  <a className="px-4 py-2 font-medium mt-2 inline-block border border-white rounded-lg">
+                    More about ⚡️ Premium
+                  </a>
                 </Link>
               </p>
             </article>
@@ -167,8 +172,11 @@ export function HomeLayout() {
                 <Link href="/[site]/[...note]" as="/blog/api">
                   <a className="underline">More about our API</a>
                 </Link>
+                <br />
                 <Link href="/[site]/[...note]" as="/blog/roadmap">
-                  <a>See a sample note ↗</a>
+                  <a className="px-4 py-2 font-medium mt-2 inline-block border border-white rounded-lg">
+                    See a sample note ↗
+                  </a>
                 </Link>
               </p>
             </article>

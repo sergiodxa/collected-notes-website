@@ -6,7 +6,7 @@ import { NotePageProps } from "types";
 import { Header } from "components/header";
 import styles from "layouts/note.module.css";
 
-export function NoteLayout({ note, site }: NotePageProps) {
+export function NoteLayout({ note, site, body }: NotePageProps) {
   return (
     <>
       <Header
@@ -16,8 +16,8 @@ export function NoteLayout({ note, site }: NotePageProps) {
       />
 
       <article
-        className={clsx(styles.article, "prose dark:prose-dark")}
-        dangerouslySetInnerHTML={{ __html: note.body }}
+        className={clsx(styles.article, "prose prose-lg dark:prose-dark")}
+        dangerouslySetInnerHTML={{ __html: body }}
       />
 
       <footer className={styles.footer}>

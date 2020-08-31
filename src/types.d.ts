@@ -1,6 +1,6 @@
-import { Note, Site } from "collected-notes";
+import { Note, Site, HTML } from "collected-notes";
 
-export type NotePageProps = { note: Note; site: Site };
+export type NotePageProps = { note: Note; site: Site; body: HTML };
 
 export type NotePageQuery = { note: string[]; site: string };
 
