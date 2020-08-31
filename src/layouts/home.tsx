@@ -1,7 +1,7 @@
 export function HomeLayout() {
   return (
     <>
-      <header className="max-w-screen-xl mx-auto grid grid-cols-3 pt-12">
+      <header className="max-w-screen-xl mx-auto grid lg:grid-cols-3 pt-12">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold">
             The simplest, and most powerful note-taking blogging platform.
