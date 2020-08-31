@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="none" />
 
         {/* HTML Meta Tags */}
         <title>Collected Notes</title>
