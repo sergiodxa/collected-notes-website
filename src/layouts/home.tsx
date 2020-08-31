@@ -1,12 +1,12 @@
 export function HomeLayout() {
   return (
     <>
-      <header className="max-w-screen-xl mx-auto grid lg:grid-cols-3 pt-12">
+      <header className="max-w-screen-xl mx-auto lg:grid lg:grid-cols-3 pt-12 space-y-6 lg:space-y-0 px-12 lg:px-0">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold">
             The simplest, and most powerful note-taking blogging platform.
           </h1>
-          <a href="https://collectednotes.com/users/sign_up" className="inline-block bg-gray-800 py-3 px-6 text-xl rounded-full">
+          <a href="https://collectednotes.com/users/sign_up" className="inline-block bg-gray-800 py-3 px-6 text-xl rounded-full text-white">
             <strong>Start writing</strong> FREE
           </a>
         </div>
