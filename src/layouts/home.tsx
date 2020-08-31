@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function HomeLayout() {
   return (
     <>
@@ -6,12 +8,15 @@ export function HomeLayout() {
           <h1 className="text-4xl font-bold">
             The simplest, and most powerful note-taking blogging platform.
           </h1>
-          <a href="https://collectednotes.com/users/sign_up" className="inline-block bg-gray-800 py-3 px-6 text-xl rounded-full text-white">
+          <a
+            href="https://collectednotes.com/users/sign_up"
+            className="inline-block bg-gray-800 py-3 px-6 text-xl rounded-full text-white"
+          >
             <strong>Start writing</strong> FREE
           </a>
         </div>
         <img
-        className="col-start-2 col-end-4"
+          className="col-start-2 col-end-4"
           src="https://static.collectednotes.com/assets/collected-notes-hero-3a661ceff3be8f6760bbd079ae842ca9b7f643de11d9706e070eedd5f787d037.png"
           alt="Example of how Collected Notes looks like in Web, iPad and iPhone."
         />
@@ -42,12 +47,12 @@ export function HomeLayout() {
               </h3>
               <p className="leading-relaxed">
                 Live{" "}
-                <a
-                  href="https://collectednotes.com/blog/a-tour-of-the-markdown-syntax"
-                  className="underline"
+                <Link
+                  href="/[site]/[...note]"
+                  as="/blog/a-tour-of-the-markdown-syntax"
                 >
-                  Markdown
-                </a>{" "}
+                  <a className="underline">Markdown</a>
+                </Link>{" "}
                 previews allow you to see the final result in real-time as you
                 type.
               </p>
@@ -85,12 +90,9 @@ export function HomeLayout() {
                 The iPhone & iPad app enables a <strong>fast</strong>{" "}
                 native-first experience. Just open the app and dive into writing
                 mode.{" "}
-                <a
-                  href="https://collectednotes.com/blog/apps"
-                  className="underline"
-                >
-                  More about our apps.
-                </a>
+                <Link href="/[site]/[...note]" as="/blog/apps">
+                  <a className="underline">More about our apps.</a>
+                </Link>
               </p>
             </article>
 
@@ -124,20 +126,14 @@ export function HomeLayout() {
               <p className="leading-relaxed">
                 No platform lock-in. Your data is yours, and it's easy to
                 export. We make money by charging a{" "}
-                <a
-                  href="https://collectednotes.com/blog/premium"
-                  className="underline"
-                >
-                  small subscription
-                </a>{" "}
+                <Link href="/[site]/[...note]" as="/blog/premium">
+                  <a className="underline">small subscription</a>
+                </Link>{" "}
                 for API access, image uploads, support and more.
                 <br />
-                <a
-                  href="https://collectednotes.com/blog/premium"
-                  className="underline"
-                >
-                  More about ⚡️ Premium
-                </a>
+                <Link href="/[site]/[...note]" as="/blog/premium">
+                  <a className="underline">More about ⚡️ Premium</a>
+                </Link>
               </p>
             </article>
             <article>
@@ -168,15 +164,12 @@ export function HomeLayout() {
                 </a>
                 . Simply append the format you want to the post URL and you're
                 all set!{" "}
-                <a
-                  href="https://collectednotes.com/blog/api"
-                  className="underline"
-                >
-                  More about our API
-                </a>
-                <a href="https://collectednotes.com/blog/roadmap">
-                  See a sample note ↗
-                </a>
+                <Link href="/[site]/[...note]" as="/blog/api">
+                  <a className="underline">More about our API</a>
+                </Link>
+                <Link href="/[site]/[...note]" as="/blog/roadmap">
+                  <a>See a sample note ↗</a>
+                </Link>
               </p>
             </article>
             <article>
